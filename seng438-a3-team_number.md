@@ -23,7 +23,9 @@ Text…
 
 # 3 A detailed description of the testing strategy for the new unit test
 
-Text…
+We first have observed the a3 source code and alongside the javadocs to see what we have covered so far from a2. We used the Eclemma plugin to quickly see the coverage statistics. We mainly checked for statement/line and branch coverage. Then, based on that, we added new test cases to see which areas of methods were not covered in a3. Since a3 this time had the source code we were able to see which functions or branches had to be covered.
+
+Since Range black box testing was extensively done in the previous assignment we had already a good level of coverage and therefore only added a few new coverages. 
 
 # 4 A high level description of five selected test cases you have designed using coverage information, and how they have increased code coverage
 
