@@ -35,7 +35,9 @@ Text…
 
 # 6 Pros and Cons of coverage tools used and Metrics you report
 
-Text…
+We used the Eclemma plugin from Eclipse. The pros of this tool are that it is widely popular and the installation process is very simple and straightforward, taking less than a minute. Also it allowed us to see easily and accurately the coverage, as well switching between line and branch coverage. With just a few clicks we were quickly able to view the statistics and as well the highlighted green or red areas of codes that were covered or uncovered.
+However, one major drawback is that the plugin does not provide a conditional coverage metric, which might have been essential for our assignment task.
+
 
 # 7 A comparison on the advantages and disadvantages of requirements-based test generation and coverage-based test generation.
 
