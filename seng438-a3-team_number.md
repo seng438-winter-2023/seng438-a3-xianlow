@@ -2,12 +2,13 @@
 
 **Lab. Report #3 – Code Coverage, Adequacy Criteria and Test Case Correlation**
 
-| Group \#:      |     |
+| Group \#:      |  1   |
 | -------------- | --- |
-| Student Names: |     |
-|                |     |
-|                |     |
-|                |     |
+| Xian Wei Low    |30113016|
+| Akashdeep Singh |30128444|
+| Abdul Moeiz     |30113088|
+| Cale Morash     |30066719|
+
 
 (Note that some labs require individual reports while others require one report
 for each group. Please see each lab document for details.)
@@ -42,12 +43,22 @@ Text…
 
 # 8 A discussion on how the team work/effort was divided and managed
 
-Text…
+As a team of 4 members, we split up into 2 pairs: pair1(Abdul and Akashdeep) and pair2(Xian and Cale). Pair1 tested for Range whereas Pair2 tested for DataUtilities.
+Each pair tested their respective program in a Pair programming style, where by taking turns one would code and the other guides or corrects in the process.
+This allowed us to maintain an Agile workflow and complete the assignment in a tight timeline. Abdul and Xian have taken more responsibility in writing the testing code and they later compared the test cases between each other, once they were done coding. To allow the contributions to be fair therefore, Cale and Akashdeep partnered up on writing the report and added all calculations for the coverage.
+
 
 # 9 Any difficulties encountered, challenges overcome, and lessons learned from performing the lab
 
-Text…
+One initial trouble we encountered was setting up the project. We were quite unsure whether the jar files and the mock jars as well had to be imported from assignment 2 or 3, as they were both present. However, by trial and error we were able to set up the imports properly as they were essential for running the Junit tests that had dependencies on these jar files.
+
+Another problem was the fact that, since initially pair1 and pair2 were independently doing their assigned tasks we encountered a slight issue in importing and merging the test cases together. There was a slight build conflict when performing the action of Junit coverage test on the whole project. However, the conflict had been resolved without any complications.
+
 
 # 10 Comments/feedback on the lab itself
 
-Text…
+Compared to the previous assignment, this 3rd assignment’s specification had a reasonable amount of text to read and comprehend the required task. This allowed us to quickly get started without having to read a lot.
+Possibly the only very slight concern was setting up the project, we initially had the doubt on where to import the jar dependencies from, as mentioned before above. We believe providing a quick GIF animation of project setup would have been more easier to follow through, compared to switching back and forth between textual instruction and trying to find specific buttons or selections. We think this would make it an easier process for both the editor and the reader.
+
+Although, this assignment has been a smoother process compared to previous ones and we are highly satisfied with it. 
+
