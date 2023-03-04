@@ -15,11 +15,21 @@ for each group. Please see each lab document for details.)
 
 # 1 Introduction
 
-Text…
+This assignment builds off of the previous assignment regarding the JFreeChart program. While assignment 2 focused primarily on black-box testing, this assignment moves towards white-box testing. By doing this, we have developed our understanding of how measuring code coverage can be used to generate more specific test cases. To complete this assignment, we specifically learned how to use and integrate the EclEmma code coverage tool into our Eclipse/JUnit testing environment. As a result of completing this assignment, we have learned the value of white-box testing and how it can be utilized in conjunction with other testing methodologies to comprehensively determine whether a program is fully functional and ready for deployment.
 
 # 2 Manual data-flow coverage calculations for X and Y methods
 
-Text…
+To calculate data-flow coverage, we simply divide the covered items by the total items and multiply the result by 100%. This formula is used on the DataUtilities.calculateColumnTotal and Range.combine methods to determine DU-pair coverage below:
+
+<img src="figures/equation1.png" alt="figures/equation1.png" width="360"/>
+
+**Equation 1 - Range.combine method formula to calculate coverage**
+
+<img src="figures/equation2.png" alt="figures/equation2.png" width="360"/>
+
+**Equation 2 - DataUtilities.calculateColumnTotal method formula to calculate coverage**
+
+We can derive the covered and total DU pairs from Figures 1-8 within the appendix. 
 
 # 3 A detailed description of the testing strategy for the new unit test
 
@@ -29,11 +39,27 @@ Since Range black box testing was extensively done in the previous assignment we
 
 # 4 A high level description of five selected test cases you have designed using coverage information, and how they have increased code coverage
 
-Text…
+We can compare the results from assignment 2 (figures 13-16, appendix) with the results of assignment 3 (figures 9-12, section 5). We can see increases in statement coverage upwards of 94% with regards to the calculateRowTotal, clone, and equal methods (figures 9, 15). Furthermore, we see an increase in statement coverage average for the DataUtilities test suite. Specifically, an increase of 46.8%. DataUtilities also saw a large increase in branch coverage with regards to the clone and equal methods as well, seeing an increase of 75.0% and 91.7% respectfully. 
+
+For the methods in Range, we saw notable improvements in statement coverage regarding the toString and intersects methods, pushing 100% improvements (figures 11, 13). For branch coverage however, we saw no improvements with regards to these methods. Slight improvements of approximately 10% were seen in the equals and contains methods (figures 12, 14).
 
 # 5 A detailed report of the coverage achieved of each class and method (a screen shot from the code cover results in green and red color would suffice)
 
-Text…
+<img src="figures/figure9.png" alt="figures/figure9.png" width="360"/>
+
+**Figure 9 - Statement coverage for DataUtilities.calculateColumnTotal method**
+
+<img src="figures/figure10.png" alt="figures/figure10.png" width="360"/>
+
+**Figure 10 - Branch coverage for DataUtilities.calculateColumnTotal method**
+
+<img src="figures/figure11.png" alt="figures/figure11.png" width="360"/>
+
+**Figure 11 - Statement coverage for Range.combine method**
+
+<img src="figures/figure12.png" alt="figures/figure12.png" width="360"/>
+
+**Figure 12 - Branch coverage for Range.combine method**
 
 # 6 Pros and Cons of coverage tools used and Metrics you report
 
@@ -43,7 +69,7 @@ However, one major drawback is that the plugin does not provide a conditional co
 
 # 7 A comparison on the advantages and disadvantages of requirements-based test generation and coverage-based test generation.
 
-Text…
+The advantages and disadvantages of each form of test generation can be derived simply from their names. Specifically, requirements-based tests are generated from the functional requirements listed for the software in question. It allows a test engineer to create tests that will verify whether a program can meet these requirements. The main disadvantage with this is requirements-based test generation often lacks scope. Even if all of the requirements-based tests pass, buggy code may remain within the program. Coverage-based test generation flips the idea of requirements-based tests, as it’s key advantage is being able to provide thorough coverage of every method within the program. By doing this, a test engineer is able to identify any code that isn’t used as a part of the full execution of the program. Since a test engineer refers to the code rather than a list of specifications for coverage-based test generation, it is possible to create tests that may not capture the purpose of a particular method within the program. This is the key disadvantage of coverage-based tests, as a function can pass a coverage-based test without addressing the bugs that would arise from the specific requirements of a given function. Consequently, any changes to the code would require changes to the test, leaving additional maintenance for the test engineer. 
 
 # 8 A discussion on how the team work/effort was divided and managed
 
